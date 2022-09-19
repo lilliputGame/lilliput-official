@@ -1,0 +1,77 @@
+@media screen and (orientation: landscape) {
+    .page {
+        width: 100vw;
+        height: 56.25vw;
+        max-height: 100vh;
+    }
+
+    .cover {
+        /* background-image: url("/assets/page1/cover_background_01.png"); */
+        background-size: cover;
+        background-position: center center;
+        position: relative;
+    }
+
+    .title-container {
+        width: 30vw;
+        padding-top: 10vh;
+        text-align: center;
+    }
+
+    .logo {
+        margin-left: 5vw;
+        width: 32vw;
+        animation: icon-loop 5000ms infinite;
+    }
+
+    @keyframes icon-loop {
+        0% {
+            transform: scale(1);
+        }
+
+        50% {
+            transform: scale(1.1);
+        }
+
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    .sub-title {
+        margin-left: 8vw;
+        width: 25vw;
+    }
+
+    .play-button {
+        position: absolute;
+        bottom: 5vh;
+        width: 20vw;
+        left: 40vw;
+    }
+
+    .play-button:hover {
+        animation: button-click 1000ms forwards;
+    }
+
+    @keyframes button-click {
+        0% {
+            transform: scale(1);
+        }
+
+        100% {
+            transform: scale(1.1);
+        }
+    }
+
+    .note {
+        position: absolute;
+        width: 3vw;
+        top: 5vw;
+        right: 5vw;
+    }
+
+    .note:hover {
+        animation: button-click 1000ms forwards;
+    }
+}
