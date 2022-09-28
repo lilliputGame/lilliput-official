@@ -1,0 +1,204 @@
+@media screen and (orientation: landscape) {
+
+.page {
+  width: 100vw;
+}
+.pets {
+  /* background-image: url("/assets/page2/pets_background_01.png"); */
+  background-size: cover;
+}
+.head {
+  height: 6vw;
+  text-align: center;
+  padding: 2vw;
+}
+.head .title {
+  width: 30vw;
+}
+.body {
+  display: flex;
+}
+.footer {
+  margin-top: 3vw;
+  padding-left: 18vw;
+  height: 10vw;
+  display: flex;
+  /* background-image: url("/assets/page2/pets_ditiao_01.png"); */
+  background-size: cover;
+  position: relative;
+  align-items: center;
+}
+.pet-book-icon {
+  position: absolute;
+  left: 3vw;
+  top: -1vw;
+  width: 10vw;
+}
+.pet-arrow-icon {
+  position: absolute;
+  width: 3vw;
+  left: 14vw;
+  animation: icon-move 2000ms infinite;
+}
+@keyframes icon-move {
+  0% {
+    transform: translate(-5px);
+  }
+  50% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(-5px);
+  }
+}
+
+.pet-panel {
+  /* background-image: url("/assets/page2/pets_diban_06.png"); */
+  background-size: cover;
+  width: 30vw;
+  margin: 0 5vw;
+  height: 34vw;
+  position: relative;
+}
+.pet-panel-header {
+  height: 3vw;
+  line-height: 3.5vw;
+  font-size: 3vw;
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold;
+  -webkit-text-stroke: 0.1vw #000;
+}
+.pet-panel-body {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin: 0 2.5vw;
+  width: 25vw;
+  height: 25vw;
+}
+
+.pet-panel-icon-scroll {
+  position: absolute;
+  bottom: 4vw;
+  width: 5vw;
+}
+
+.pet-panel-icon {
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  width: 25vw;
+  height: 25vw;
+}
+.pet-panel-icon.ani {
+  animation: icon-loop 4000ms steps(29) infinite;
+}
+@keyframes icon-loop {
+  from {
+    background-position-x: 0;
+  }
+  to {
+    background-position-x: 100%;
+  }
+}
+
+.pet-footer-desc {
+  font-size: 2.2vw;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+  -webkit-text-stroke: 0.1vw #000;
+}
+.pet-panel-bottom {
+  bottom: 5vw;
+  height: 5vw;
+  width: 30vw;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+}
+.pet-button-2d {
+  top: -3vw;
+  margin: 0 1vw;
+  width: 3vw;
+  height: 3vw;
+  background-size: cover;
+}
+.pet-button-2d.on {
+  /* background-image: url("/assets/page2/pets_button_02_on.png"); */
+}
+.pet-button-2d.off {
+  /* background-image: url("/assets/page2/pets_button_02_off.png"); */
+}
+.pet-button-3d {
+  width: 3vw;
+  height: 3.2vw;
+  margin: 0 1vw;
+  background-size: cover;
+}
+.pet-button-3d.on {
+  /* background-image: url("/assets/page2/pets_button_01_on.png"); */
+}
+.pet-button-3d.off {
+  /* background-image: url("/assets/page2/pets_button_01_off.png"); */
+}
+.pet-list {
+  /* background-image: url("/assets/page2/pets_diban_05.png"); */
+  background-size: cover;
+  width: 50vw;
+  height: 29vw;
+  padding: 2vw 2vw 5vw 2vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.pet-card-container .pet-card {
+  border-radius: 1vw;
+  background-size: cover;
+  width: 11vw;
+  height: 12vw;
+}
+.pet-list .pet-card-container {
+  width: 12vw;
+  height: 13vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pet-card-container .pet-card.active {
+  width: 12vw;
+  height: 13vw;
+  animation: pet-card-loop 500ms infinite;
+}
+@keyframes pet-card-loop {
+  0% {
+    box-shadow: 0 0 5px 0px #e3de94;
+  }
+  50% {
+    box-shadow: 0 0 10px 5px #e3de94;
+  }
+  100% {
+    box-shadow: 0 0 5px 0px #e3de94;
+  }
+}
+
+.pet-card-header {
+  font-size: 2vw;
+  line-height: 2vw;
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold;
+  -webkit-text-stroke: 0.1vw #000;
+}
+.pet-card-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pet-card-icon {
+  width: 9vw;
+}}
