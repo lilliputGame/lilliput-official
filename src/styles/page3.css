@@ -1,0 +1,115 @@
+@media screen and (orientation: landscape) {
+
+.page {
+  width: 100vw;
+}
+.body {
+  display: flex;
+}
+.setting {
+  /* background-image: url("/assets/page3/setting_backgrpund_01.png"); */
+  background-size: cover;
+}
+.head {
+  text-align: center;
+  padding: 2vw;
+  z-index: 99;
+}
+.head .title {
+  width: 30vw;
+}
+.video-player {
+  z-index: 1;
+  width: 70vw;
+  height: 52vw;
+  position: relative;
+}
+.video-cover {
+  width: 70vw;
+  height: 52vw;
+  /* background-image: url("/assets/page3/setting_tv_01.png"); */
+  background-size: cover;
+  z-index: 9;
+  position: absolute;
+}
+.video-source {
+  z-index: 1;
+  /* width: 52vw; */
+  height: 26vw;
+  position: absolute;
+  bottom: 11vw;
+  left: 11vw;
+  background-color: black;
+}
+.video-list {
+  margin-top: 10vw;
+  width: 28vw;
+  height: 37vw;
+  padding: 4vw 2vw 2vw 2vw;
+  text-align: center;
+  box-sizing: border-box;
+  /* background-image: url("/assets/page3/setting_diban_01.png"); */
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.video-list-header {
+  width: 10vw;
+  padding-top: 1vw;
+  margin-bottom: 3vw;
+}
+.video-item {
+  margin-bottom: 3vw;
+  color: rgb(170, 170, 170);
+  -webkit-text-stroke: 0.1vw #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.video-item.active {
+  color: #fff;
+}
+.video-item .title {
+  font-size: 2.5vw;
+  margin: 0 0.5vw;
+  height: 3vw;
+  border-bottom: 4px solid #ffffff55;
+}
+.video-item .arrow {
+  width: 2vw;
+}
+.arrow.left {
+  animation: icon-left 2000ms infinite;
+}
+@keyframes icon-left {
+  0% {
+    transform: translate(-5px);
+  }
+  50% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(-5px);
+  }
+}
+.arrow.right {
+  animation: icon-right 2000ms infinite;
+}
+@keyframes icon-right {
+  0% {
+    transform: translate(5px);
+  }
+  50% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(5px);
+  }
+}
+.bee {
+  position: absolute;
+  width: 10vw;
+  right: 2vw;
+}}
