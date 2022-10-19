@@ -1,0 +1,157 @@
+@media screen and (orientation: portrait) {
+    .page {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .head {
+        height: 5vh;
+        text-align: center;
+        padding: 2vh;
+    }
+
+    .head .title {
+        height: 5vh;
+    }
+    .success {
+        /* background-image: url("/assets/page4/success_background_01.png"); */
+        height: 116vh;
+        background-size: cover;
+    }
+
+    .road-map {
+        display: flex;
+    }
+
+    .road-map-list {
+        /* height: 70vh; */
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .road-map-list .road-map-card {
+        padding: 2vw 0;
+        /* width: 80vw; */
+        /* height: 50vh; */
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .road-map-card-icon {
+        box-sizing: border-box;
+        width: 8vh;
+        height: 8vh;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .road-map-card-icon-img {
+        z-index: 2;
+        width: 7vh;
+        height: 7vh;
+    }
+
+    .road-map-card-icon-img.active {
+        width: 10vh;
+        height: 10vh;
+    }
+
+    .road-map-card {
+        font-family: BalooBhaina;
+        color: rgb(170, 170, 170);
+    }
+
+    .road-map-card.active {
+        color: #fff;
+    }
+
+    .road-map-card-title {
+        -webkit-text-stroke: 0.1vw #000;
+        /*height: 5vh;*/
+        /*line-height: 5vh;*/
+        font-size: 1.5vh;
+    }
+
+    .road-map-card-title.active {
+        font-size: 1.8vh;
+    }
+
+    .road-map-card-bottom {
+        margin-top: 2vh;
+        width: 8vh;
+        height: 4vh;
+        /* background-image: url("/assets/page4/success_change_01_on.png"); */
+        background-size: cover;
+        position: relative;
+    }
+
+    .road-map-card:nth-child(n + 2) .road-map-card-bottom::before {
+        z-index: 1;
+        content: "";
+        position: absolute;
+        /*定位背景横线的位置*/
+        top: -17vh;
+        left: 50%;
+        background: #ffffff55;
+        /*宽和高做出来的背景横线*/
+        height: 17vh;
+        width: 0.5vh;
+    }
+
+    .road-map-card-time {
+        width: 8vh;
+    }
+    .road-map-card-time-font {
+        position: absolute;
+        top: -4px;
+        left: 50%;
+        width: fit-content;
+        transform: translateX(-50%);
+        white-space: nowrap;
+        line-height: 20px;
+        font-size: 20px;
+        font-weight: 700;
+        background-image: -webkit-linear-gradient(top,#7F7868 48%,#7e6a36 48%, #7e6a36 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 1px #000000;
+    }
+    .road-map-card.active .road-map-card-time-font {
+        background-image: -webkit-linear-gradient(top,#FFF4D9 48%,#FED56E 48%, #FED56E 100%);
+    }
+
+    .road-map-card-time-cover {
+        width: 10vh;
+        height: 7vh;
+        left: -1vh;
+        bottom: -1vh;
+        position: absolute;
+        /* background-image: url("/assets/page4/success_change_02.png"); */
+        background-size: cover;
+    }
+
+    .road-map-card-time-cover {
+        animation: icon-cover 2000ms infinite;
+    }
+
+    @keyframes icon-cover {
+        0% {
+            opacity: 0;
+        }
+
+        50% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+}
