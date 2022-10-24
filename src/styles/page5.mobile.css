@@ -1,0 +1,52 @@
+@media screen and (orientation: portrait) {
+    .page {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .head {
+        height: 5vh;
+        text-align: center;
+        padding: 2vh;
+    }
+
+    .head .title {
+        height: 5vh;
+    }
+
+    .partners {
+        /* background-image: url("/assets/page5/partners_background_01.png"); */
+        background-size: cover;
+        position: relative;
+    }
+
+    .body {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .audit-by {
+        width: 15vh;
+        margin: 5vh;
+    }
+
+    .certik-logo {
+        width: 20vh;
+    }
+
+    .fotter {
+        position: absolute;
+        bottom: 10vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        padding: 2vh;
+        box-sizing: border-box;
+    }
+
+    .social-logo {
+        margin-left: 2vh;
+    }
+}
